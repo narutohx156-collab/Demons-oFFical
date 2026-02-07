@@ -1,0 +1,233 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Metal Mania', cursive;
+}
+
+/* ===== خلفية + ضباب ===== */
+body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+#lightningCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ===== الأقسام الثابتة ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    z-index: 100;
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: gold;
+}
+
+/* ===== العنوان الرئيسي ===== */
+.container {
+    margin-left: 240px;
+    padding: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px white;
+}
+
+.title span {
+    display: block;
+    font-size: 28px;
+    color: gray;
+}
+
+/* ===== صورة الموقع ===== */
+.site-image {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 500px;
+    opacity: 0.6;
+}
+
+/* ===== صناديق التعريف ===== */
+.about-box, .extra-info {
+    background: rgba(20,20,20,0.85);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #111;
+    line-height: 1.5;
+}
+
+/* ===== الأزرار ===== */
+.dx-box {
+    display: inline-block;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #fff;
+    transition: 0.4s;
+    text-align: center;
+    width: 250px;
+}
+
+.dx-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px white;
+}
+
+/* ===== روابط التواصل ===== */
+.social-buttons {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: rgba(255,255,255,0.05);
+    transition: 0.4s;
+    box-shadow: 0 0 10px #fff;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #fff;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ===== لوحة التفاصيل ===== */
+.overlay {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.95);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    position: relative;
+    background: rgba(30,30,30,0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 900px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 30px #fff;
+    overflow: hidden;
+}
+
+.panel .clouds {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.03);
+    z-index:0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: red;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ===== قسم القصة ===== */
+.story-section {
+    background: rgba(10,10,10,0.85);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px #111;
+}
+
+.story-arrow {
+    display: block;
+    margin: 10px auto 30px auto;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 10px #fff;
+    transition: 0.4s;
+}
+
+.story-arrow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #fff;
+}
+
+/* ===== النصوص داخل القصة ===== */
+.story-section p {
+    margin-bottom: 8px;
+}
